@@ -31,7 +31,7 @@ public class controller {
                           Model model)
                           throws IOException {
         
-        SimpleDateFormat ttl = new SimpleDateFormat ("EEEE, dd MM YYYY");
+        SimpleDateFormat ttl = new SimpleDateFormat ("yyyy-MM-dd");
         String newTtl = ttl.format(date);
         
         String blob = Base64.encodeBase64String(image.getBytes());
