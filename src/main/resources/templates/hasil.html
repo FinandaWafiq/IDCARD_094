@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Berikut Tampilan ID Card</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div style="border: 5px solid; margin:auto; padding:10; text-align: center; background-color: skyblue; width: 600px; height: 500px">
+            <div>ID Card Mahasiswa</div>
+            <center>
+            <div id="header">
+            <hr />
+            <form method="POST" action="/getData" enctype="multipart/form-data">
+            Nama Mahasiswa          : <a th:text="${nm}"></a> <br><br>
+            Tempat, Tanggal Lahir   : <a th:text="${dt}"></a> <br><br>
+            Foto Mahasiswa          : <img th:src="${fotomhs}"
+                                           width="300"
+                                           height="300"/>
+            </div>
+            </center>
+        </div>
+    </body>
+</html>
